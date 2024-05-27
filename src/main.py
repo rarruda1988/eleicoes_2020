@@ -66,7 +66,7 @@ def escreve_df(lista_candidato_completo: list[CandidatoCompleto], ano_eleicao: i
                item.numero_processo_drap, item.numero_processo,  item.numero_processo_prest_contas, item.id, item.numero)
               for item in lista_candidato_completo],
         columns=["nome_completo", "cargo", "localCandidatura", "ufCandidatura", "cnpjcampanha", "descricaoSexo", "descricaoCorRaca", "nacionalidade", "grauInstrucao", "gastoCampanha1T", "gastoCampanha2T",
-                 "numeroProcessoDrap", "numeroProcesso", "numeroProcessoPrestContas", "id", "numero"])
+                 "numeroProcessoDrap", "numeroProcesso", "numeroProcessoPrestContas", "id", "numero","ocupacao"])
     # df_erro = pd.DataFrame(
     #     data=[(item.nome_completo, item.cargo.nome, item.local_candidatura, item.uf_candidatura, item.cnpjcampanha, item.descricao_sexo, item.descricao_cor_raca, item.nacionalidade, item.grau_instrucao, item.gasto_campanha1_t, item.gasto_campanha2_t,
     #            item.numero_processo_drap, item.numero_processo,  item.numero_processo_prest_contas, item.id, item.numero)
